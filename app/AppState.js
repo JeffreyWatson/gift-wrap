@@ -5,10 +5,15 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = []
 
-  /** @type {import('./Models/Gift').Gift[]]} */
+  /** @type {import('./Models/Gift').Gift[]} */
 
 
   gifts = []
+
+
+  /** @type {import('./Models/Gif').Gif[]} */
+
+  gifs = {}
 }
 
 export const ProxyState = new Proxy(new AppState(), {
